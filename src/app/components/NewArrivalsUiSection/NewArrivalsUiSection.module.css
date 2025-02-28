@@ -1,0 +1,209 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+  
+  .titleLine {
+    flex: 1;
+    border: none;
+    border-top: 2px solid #000; /* Line color and thickness */
+  }
+  
+  .titleText {
+    padding: 0 20px; /* Space between text and line */
+    font-size: 20px; /* Default font size */
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  /* Responsive Title Text Size */
+  @media (max-width: 1200px) {
+    .titleText {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .titleText {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .titleText {
+      font-size: 14px;
+    }
+  }
+  
+  .productCard {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+
+
+
+  
+  .productCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  .quickViewOverlay {
+    position: absolute;
+    bottom: 0;  /* Start from the bottom */
+    left: 0;
+    right: 0;
+    height: 0; /* Start with height 0 to hide it */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+  }
+  
+  .productCard:hover .quickViewOverlay {
+    opacity: 1;
+    visibility: visible;
+    height: 50px; /* Animate to height 50px */
+    bottom: 0; /* Keep it pinned at the bottom */
+  }
+  
+
+  
+  /* Responsive Quick View Overlay Text Size */
+  @media (max-width: 1200px) {
+    .quickViewOverlay {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .quickViewOverlay {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .quickViewOverlay {
+      font-size: 12px;
+    }
+  }
+  
+  .productInfo {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .productName {
+    font-size: 14px; /* Default font size */
+  }
+  
+  /* Responsive Product Name Text Size */
+  @media (max-width: 1200px) {
+    .productName {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productName {
+      font-size: 10px;
+    }
+  }
+  
+  .priceContainer {
+    margin-top: 6px;
+    font-size: 18px; /* Default font size */
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Responsive Price Container Text Size */
+  @media (max-width: 1200px) {
+    .priceContainer {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .priceContainer {
+      font-size: 14px;
+    }
+  }
+  
+  .originalPrice {
+    font-size: 16px; /* Default font size */
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #888;
+  }
+  
+  /* Responsive Original Price Text Size */
+  @media (max-width: 1200px) {
+    .originalPrice {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .originalPrice {
+      font-size: 12px;
+    }
+  }
+  
+  .viewButtonContainer {
+    margin-top: 10px;
+  }
+  
+  .viewButton {
+    padding: 5px 15px;
+    background-color: #f68b1f;
+    color: #fff;
+    border: none;
+    font-size: 12px; /* Default font size */
+    cursor: pointer;
+  }
+  
+  /* Responsive View Button Text Size */
+  @media (max-width: 1200px) {
+    .viewButton {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .viewButton {
+      font-size: 8px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

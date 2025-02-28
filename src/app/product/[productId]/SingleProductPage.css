@@ -1,0 +1,21 @@
+.image img {
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+    /* Add your laptop/large screen specific styles here */
+    .carousel.carousel-slider .control-arrow{
+        top: 0;
+        /* color: #000000; */
+        font-size: 25px;
+        bottom: 0;
+        margin-top: 0;
+        padding: 125px;
+        /* background-color: #000000; */
+    }
+  }
+  

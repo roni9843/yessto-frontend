@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: "Arial, sans-serif";
+  }
+  
+  /* Main login container */
+  .login-container {
+    background-color: var(--whiteColor_v_2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Login box */
+  .login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--whiteColor);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Welcome text */
+  .login-title {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  
+  .login-title span {
+    font-weight: bold;
+  }
+  
+  /* Subtitle */
+  .login-subtitle {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--grayColor);
+  }
+  
+  /* Input fields */
+  .form-control {
+    background-color: var(--whiteColor);
+    border-color: var(--whiteColor_v_3);
+    color: var(--grayColor);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--whiteColor_v_3);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  /* Submit button */
+  .btn-success {
+    background-color: black !important;
+    border-color: black !important;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change button to dark gray when hovered */
+  .btn-success:hover {
+    background-color: #333 !important;
+    border-color: #333 !important;
+  }
+  
+  /* Change button to gray when disabled/loading */
+  .btn-success:disabled {
+    background-color: gray !important;
+    border-color: gray !important;
+    cursor: not-allowed;
+  }
+  
+  /* Sign up link */
+  .signup-link {
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link:hover {
+    color: #555;
+  }
+  
